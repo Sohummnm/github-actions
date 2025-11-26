@@ -1,0 +1,12 @@
+#sample cicd practice file 2
+name: Hello World Workflow
+on: 
+    push:
+        branches:
+            - main
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Greet the world
+              run: echo "Hello, WORLD!"
