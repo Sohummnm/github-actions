@@ -17,6 +17,6 @@ jobs:
             - name: Show github workspace
               run: echo "${{ github.workspace }}"
             - name: Show runner OS
-              run: wcho "${{ runner.os }}"
+              run: echo "${{ runner.os }}"
             - name: Show repository name
               run: echo "${{ github.repository }}"
