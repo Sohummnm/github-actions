@@ -1,0 +1,20 @@
+#cicd for nodejs application
+
+name: NodeJS CICD Pipeline
+on: [push, pull_request]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+        - name: Set up Node.js
+          uses: actions/setup-node@v4
+          with:
+            node-version: '20'
+        - name: Print node.js version
+          run: node -v
+        - name: Install dependencies
+          run: npm install
+        - name: Run tests
+          run: npm test
