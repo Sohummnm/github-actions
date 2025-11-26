@@ -1,7 +1,7 @@
 #CICD using GitHub Actions
 
 name: CI Pipeline
-on: push
+on: pull_request
 jobs:
     build:
         runs-on: ubuntu-latest

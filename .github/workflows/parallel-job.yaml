@@ -1,0 +1,15 @@
+#parallel job.yaml
+
+name: parallel-job-cicd-pipeline
+on: [push]
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print message
+              run: echo "This is Job 1"
+    job2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print message
+              run: echo "This is Job 2"
