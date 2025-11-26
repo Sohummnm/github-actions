@@ -8,3 +8,15 @@ jobs:
         steps:
             - name: Print a message
               run: echo "Hello, WORLD!"
+            - name: Show crrent time
+              run: date
+            - name: List files
+              run: ls -la
+            - name: Print workflow event
+              run: echo "${{ github.event_name }}"
+            - name: Show github workspace
+              run: echo "${{ github.workspace }}"
+            - name: Show runner OS
+              run: wcho "${{ runner.os }}"
+            - name: Show repository name
+              run: echo "${{ github.repository }}"
