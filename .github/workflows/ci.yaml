@@ -1,0 +1,10 @@
+#CICD using GitHub Actions
+
+name: CI Pipeline
+on: push
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print a message
+              run: echo "Hello, WORLD!"
